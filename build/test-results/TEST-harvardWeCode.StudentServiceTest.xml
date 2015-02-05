@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="harvardWeCode.StudentServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-02-05T01:15:51" hostname="MollysMac.local" time="0.008">
+<testsuite name="harvardWeCode.StudentServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-02-05T19:29:57" hostname="MollysMac.local" time="0.007">
   <properties/>
-  <testcase name="shouldReturnListOfMajors" classname="harvardWeCode.StudentServiceTest" time="0.004"/>
+  <testcase name="shouldReturnListOfMajors" classname="harvardWeCode.StudentServiceTest" time="0.003"/>
   <testcase name="shouldCreateHashWithRaceAndEthnicityAsKeysAndGenderAsSubKeys" classname="harvardWeCode.StudentServiceTest" time="0.001"/>
   <testcase name="shouldCreateListOfPercentagesByMajorForTotalAndEachGender" classname="harvardWeCode.StudentServiceTest" time="0.001"/>
-  <testcase name="shouldIncludeAllRacesAndEthnicities" classname="harvardWeCode.StudentServiceTest" time="0.001"/>
+  <testcase name="shouldIncludeAllRacesAndEthnicities" classname="harvardWeCode.StudentServiceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

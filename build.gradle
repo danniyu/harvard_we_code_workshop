@@ -31,6 +31,7 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter",
             "org.springframework.boot:spring-boot-starter-web:1.2.1.RELEASE",
+            "org.springframework.boot:spring-boot-starter-thymeleaf:1.2.1.RELEASE",
             'net.sf.opencsv:opencsv:2.3'
     )
     testCompile("org.springframework.boot:spring-boot-starter-test",
