@@ -1,6 +1,7 @@
 package harvardWeCode;
 
 import au.com.bytecode.opencsv.CSVReader;
+import org.springframework.stereotype.Service;
 
 import java.io.FileReader;
 import java.nio.file.Paths;
@@ -9,9 +10,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Service
 public class StudentService {
     private final String intentionToMajor = String.format(Paths.get("").toAbsolutePath() + "/" + "intentions_of_freshman_to_major_in_stem.csv");
-    private Map something = new HashMap<>();
+    private Map studentData = new HashMap<>();
     private String[] majors;
 
     public StudentService() {
@@ -26,12 +28,10 @@ public class StudentService {
             while(max < strings.size()) {
                 List<String[]> raceEthnicityAndGenderStatistics = strings.subList(min, max);
                 Map listOfMajorsByPercent = createListOfMajorsByPercent(raceEthnicityAndGenderStatistics);
-                something.putAll(listOfMajorsByPercent);
+                studentData.putAll(listOfMajorsByPercent);
                 min = min + 3;
                 max = max + 3;
             }
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -49,7 +49,7 @@ public class StudentService {
     }
 
     public Map list() {
-        return something;
+        return studentData;
     }
 
     public Map createListOfMajorsByPercent(List<String[]> exampleData) {

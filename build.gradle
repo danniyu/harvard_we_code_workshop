@@ -13,7 +13,8 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot' 
+apply plugin: 'spring-boot'
+apply plugin: 'application'
 
 jar {
     baseName = 'harvardWeCode'
@@ -46,3 +47,9 @@ eclipse {
 task wrapper(type: Wrapper) {
     gradleVersion = '1.12'
 }
+
+logging.captureStandardOutput LogLevel.DEBUG
+mainClassName = 'harvardWeCode.HarvardWeCodeApplication'
+//task run() {
+//    "java -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5000 -jar /build/libs/harvardWeCode-0.0.1-SNAPSHOT.jar"
+//}
