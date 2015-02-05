@@ -1,6 +1,6 @@
 $(function() {
   $.get("/students", function( data ) {
-    $( ".result" ).html( data );
-    alert( "Student data was retrieved." );
+    console.log("Student data was retrieved.");
+    console.log(data);
   });
 });

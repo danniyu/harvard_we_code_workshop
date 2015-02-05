@@ -14,7 +14,7 @@ public class StudentController {
     @Autowired
     StudentService studentService;
 
-    @RequestMapping("/")
+    @RequestMapping("")
     @ResponseBody
     Map home() {
         return studentService.list();
