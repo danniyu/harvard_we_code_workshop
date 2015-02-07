@@ -62,10 +62,4 @@ public class StudentServiceTest {
         return exampleData;
     }
 
-    private List<String[]> getExampleMultipleGroupsCSVData() {
-        ArrayList<String[]> dataSet = new ArrayList<>();
-        dataSet.addAll(getExampleCSVData("Asian"));
-        dataSet.addAll(getExampleCSVData("White"));
-        return dataSet;
-    }
 }
