@@ -56,5 +56,6 @@ the title and the data set for that group should appear (the total and each gend
       // Assert on the data that is returned. For starters, we can assert that we get a list of 3 items
     }
 
+
 Awesome - we've got a new endpoint to utilize from our javascript. Don't forget to add the @RequestMapping annotation above the method so we can access the data.
 Now we need to modify the javascript slightly to utilize our new endpoint.
