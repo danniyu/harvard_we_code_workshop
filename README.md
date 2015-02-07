@@ -42,7 +42,7 @@ by having conventions and standards to follow. This way when you move from one p
     Still not sure where to look?
     Hint #2: The gender specific information is already being returned by the "/students" endpoint. You will need to add two more donuts to represent this data.
 
-### 3. Get back just one ethnicity.
+### 3. Add clickable links to data for each race/ethnicity.
 
 Right now we're returning a portion of the data set for simplicity sake. We'd like to add a list of all races and ethnicity groups. Each item in the list should allow the user to click on
 the title and the data set for that group should appear (the total and each gender set). First, don't forget to add a test in the StudentControllerTest! Before we add functionality we want a test to indicate what behavior we intend to implement.
